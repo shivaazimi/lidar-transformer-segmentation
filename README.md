@@ -1,6 +1,6 @@
 # Semantic Segmentation of 3D Point clouds using Transformer 
 
-This project explores the application of self-attention networks to 3D point cloud processing with the focus on semantic segmentation task.The model is evaluated on the SemanticKitti dataset.
+This project explores the application of self-attention networks to 3D point cloud processing with the focus on semantic segmentation task.The model is evaluated on the SemanticKitti dataset, a large-scale outdoor urban environments .
 
 
 ## Table of Contents
@@ -8,13 +8,15 @@ This project explores the application of self-attention networks to 3D point clo
 - [Description](#description)
   - [Sub Header](#subheader-name)
 - [Dataset Preparation](#dataset_preparation)
+- [Result](#results)
+
 
 
 
 
 ## Description <a name="description"></a>
 
-### Dataset Preparation <a name="dataset_preparation"></a>
+## Dataset Preparation <a name="dataset_preparation"></a>
 
 - Download Semantic-KITTI [dataset](http://semantic-kitti.org/dataset.html) and symlink the paths to them as follows:
 
@@ -22,3 +24,13 @@ This project explores the application of self-attention networks to 3D point clo
    mkdir -p dataset
    ln -s /path_to_s3dis_dataset dataset/s3dis
    ```
+
+
+## Result <a name="results"></a>
+
+- Semanctic Segmentation on S3DIS Area 5
+
+  |Model | mAcc | OA | mIoU |
+  |-------| ------| ----| -------|
+  |Paper| 76.5 | 90.8 | 70.4 |
+  |Hengshuang's code | 76.8 | 90.4 | 70.0 |
