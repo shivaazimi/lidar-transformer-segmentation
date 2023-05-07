@@ -8,7 +8,9 @@ This project explores the application of self-attention networks to 3D point clo
 - [Description](#description)
   - [Sub Header](#subheader-name)
 - [Prerequisites](#requirements)
-- [Dataset Preparation](#dataset_preparation)
+- [Datase](#dataset)
+  - [Preparation](#dataset_preparation)
+  - [Description](#dataset_description)
 - [Result](#results)
 
 
@@ -17,15 +19,19 @@ This project explores the application of self-attention networks to 3D point clo
 
 ## Description <a name="description"></a>
 
-## Dataset Preparation <a name="dataset_preparation"></a>
+## Dataset <a name="dataset"></a>
+
+### Preparation <a name="dataset_preparation"></a>
+
 
 - Download Semantic-KITTI [dataset](http://semantic-kitti.org/dataset.html) and symlink the paths to them as follows:
 
   ```sh
    mkdir -p dataset
-   ln -s /path_to_s3dis_dataset dataset/s3dis
+   ln -s /path_to_semantickitti_dataset dataset/semantickitti
    ```
 
+### Description <a name="dataset_description"></a>
 
 
 ## Prerequisites < a name="requirements"></a>
