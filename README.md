@@ -5,19 +5,14 @@ This project explores the application of self-attention networks to 3D point clo
 
 ## Table of Contents
 
-- [Header name](#header-name)
-  - [Subheader name](#subheader-name)
+- [Description](#description)
+  - [Dataset Preparation](#subheader-name)
 
 
 
-## Header name <a name="header-name"></a>
-### Subheader name <a name="subheader-name"></a>
+## Description <a name="description"></a>
 
-
-
-
-## Description
-## Dataset Preparation 
+### Dataset Preparation <a name="dataset_preparation"></a>
 
 - Download Semantic-KITTI [dataset](http://semantic-kitti.org/dataset.html) and symlink the paths to them as follows:
 
