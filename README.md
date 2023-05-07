@@ -22,7 +22,7 @@ This project explores the application of self-attention networks to 3D point clo
 
   ```sh
    mkdir -p dataset
-   ln -s /path_to_s3dis_dataset dataset/s3dis
+   ln -s /path_to_semantickitti_dataset dataset/semantickitti
    ```
 
 
