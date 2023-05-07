@@ -7,6 +7,7 @@ This project explores the application of self-attention networks to 3D point clo
 
 - [Description](#description)
   - [Sub Header](#subheader-name)
+- [Prerequisites](#requirements)
 - [Dataset Preparation](#dataset_preparation)
 - [Result](#results)
 
@@ -22,15 +23,26 @@ This project explores the application of self-attention networks to 3D point clo
 
   ```sh
    mkdir -p dataset
-   ln -s /path_to_semantickitti_dataset dataset/semantickitti
+   ln -s /path_to_s3dis_dataset dataset/s3dis
    ```
 
 
+
+## Prerequisites < a name="requirements"></a>
+- PyTorch: 1.9.0
+- CUDA: 11.1
+- Hardware: at least 4GPUs are required to run this model.
+- To set up a Conda environment, run the following command:
+
+  ```
+  bash env_setup.sh pt
+  ```
 ## Result <a name="results"></a>
 
-- Semanctic Segmentation on S3DIS Area 5
+- Semanctic Segmentation on SemanticKitti
 
   |Model | mAcc | OA | mIoU |
   |-------| ------| ----| -------|
   |Paper| 76.5 | 90.8 | 70.4 |
   |Hengshuang's code | 76.8 | 90.4 | 70.0 |
+
