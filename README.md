@@ -6,7 +6,9 @@ This project explores the application of self-attention networks to 3D point clo
 ## Table of Contents
 
 - [Description](#description)
-  - [Dataset Preparation](#subheader-name)
+  - [Sub Header](#subheader-name)
+- [Dataset Preparation](#dataset_preparation)
+
 
 
 
