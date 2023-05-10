@@ -19,7 +19,7 @@ In this project, We have applied a modification of the Point Transformer model t
 
 To provide some context, The Point Transformer paper proposed a design for self-attention layers for point clouds, and achieved state-of-the-art results across different tasks such as semantic scene segmentation, object part segmentation,and object classification.This model attained an mIoU of 70.4% on the challenging S3DIS dataset for large-scale indoor semantic scene segmentation, outperforming the strongest prior model by 3.3 absolute percentage points and crossing the 70% mIoU threshold for the first time. 
 
-## Dependencies < a name="dependencies"></a>
+## Dependencies <a name="dependencies"></a>
 - PyTorch: 1.9.0
 - CUDA: 11.1
 - Hardware: at least 4GPUs are required to run this model.
@@ -29,7 +29,7 @@ To provide some context, The Point Transformer paper proposed a design for self-
   bash env_setup.sh pt
   ```
 
-## Folder structure < a name="folder_structure"></a>
+## Folder structure <a name="folder_structure"></a>
 
 - Dataloading and preprocessed datasets are available in `data_loader` and `dataset`. 
 - The model is available in `models/st_gat.py`. 
