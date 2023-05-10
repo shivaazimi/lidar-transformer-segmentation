@@ -19,6 +19,7 @@ In this project, We have applied a modification of the Point Transformer model t
 To provide some context, The Point Transformer paper proposed a design for self-attention layers for point clouds, and achieved state-of-the-art results across different tasks such as semantic scene segmentation, object part segmentation,and object classification.This model attained an mIoU of 70.4% on the challenging S3DIS dataset for large-scale indoor semantic scene segmentation, outperforming the strongest prior model by 3.3 absolute percentage points and crossing the 70% mIoU threshold for the first time. 
 ## Dataset <a name="dataset"></a>
 
+The SemanticKitti dataset is a large-scale outdoor LiDAR point cloud dataset designed for semantic segmentation of urban environments, including city streets, sidewalks, and residential areas. With over 20 sequences captured in a variety of cities and terrains, the dataset provides a diverse range of scenarios for training and evaluation of deep learning models. Each point in the LiDAR scan is labeled with semantic segmentation information indicating the object type and ground plane, enabling the development of models for tasks such as object detection and scene segmentation in autonomous driving applications. The dataset has become a benchmark for evaluating the performance of deep learning models on 3D point cloud data.
 ### Preparation <a name="dataset_preparation"></a>
 
 
