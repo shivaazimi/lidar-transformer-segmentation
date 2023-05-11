@@ -8,7 +8,7 @@ This project explores the application of self-attention networks,  which have sh
 - [Dependencies](#dependencies)
 - [Datase](#dataset)
   - [Preparation](#dataset_preparation)
-  - [Specification](#dataset_description)
+  - [Data Organization](#data_organization)
 - [Results](#results)
 - [References](#references)
 
@@ -80,8 +80,44 @@ The SemanticKitti dataset is a large-scale outdoor LiDAR point cloud dataset of 
    ln -s /path_to_semantickitti_dataset dataset/semantickitti
    ```
 
-### Specification <a name="dataset_description"></a>
+### Data organization <a name=" data_organization"></a>
 
+The data is organized in the following format:
+
+```
+/kitti/dataset/
+          └── sequences/
+                  ├── 00/
+                  │   ├── poses.txt
+                  │   ├── image_2/
+                  │   ├── image_3/
+                  │   ├── labels/
+                  │   │     ├ 000000.label
+                  │   │     └ 000001.label
+                  |   ├── voxels/
+                  |   |     ├ 000000.bin
+                  |   |     ├ 000000.label
+                  |   |     ├ 000000.occluded
+                  |   |     ├ 000000.invalid
+                  |   |     ├ 000001.bin
+                  |   |     ├ 000001.label
+                  |   |     ├ 000001.occluded
+                  |   |     ├ 000001.invalid
+                  │   └── velodyne/
+                  │         ├ 000000.bin
+                  │         └ 000001.bin
+                  ├── 01/
+                  ├── 02/
+                  .
+                  .
+                  .
+                  └── 21/
+ ```
+- velodyne contains the pointclouds for each scan in each sequence. Each `.bin` scan is a list of float32 points in ` [x,y,z,intensity]`
+- labels contains the labels for each scan in each sequence. Each  `.label` file contains a uint32 label for each point in the corresponding `.bin` scan.
+-   Voxel is a 3D pixel in the scene. "voxels" folder contains information needed for the task of semantic scene completion. It contains two types of files: 
+       - .bin files and .label files. The `.bin` files contain a binary representation of whether each voxel in the scene is occupied by laser measurements or not. 
+       - `.label` files contain a binary label for each voxel in the completed scene. The label is a 16-bit unsigned integer (uint16_t) that specifies the semantic class of the voxel, such as "car", "pedestrian", "building",
 ## Results <a name="results"></a>
 
 Semanctic Segmentation on S3DIS Dataset
