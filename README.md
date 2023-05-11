@@ -84,7 +84,7 @@ The SemanticKitti dataset is a large-scale outdoor LiDAR point cloud dataset of 
 
 ## Results <a name="results"></a>
 
-- Semanctic Segmentation on S3DIS Dataset
+Semanctic Segmentation on S3DIS Dataset
 
   |Model | mAcc | OA | mIoU |
   |-------| ------| ----| -------|
@@ -96,7 +96,7 @@ The SemanticKitti dataset is a large-scale outdoor LiDAR point cloud dataset of 
 
 
 
-- Semanctic Segmentation on SemanticKitti Dataset
+Semanctic Segmentation on SemanticKitti Dataset
 
   |Model | mAcc | OA | mIoU |
   |-------| ------| ----| -------|
@@ -111,8 +111,11 @@ The SemanticKitti dataset is a large-scale outdoor LiDAR point cloud dataset of 
   |DarkNet21Seg | - | - | 47.4 |
   |DarkNet53Seg | - | - | 49.9 |
 
+- The results of the PointNet and SPGraph models are added for both datasets to demonstrate that the SemanticKitti dataset is a more challenging dataset than the S3DIS dataset.
 
-PointNet [25] – 49.0 41.1
+- Likewise,I a comparative analysis is conducted on the performance of our Point Transformer model against other state-of-the-art models in point cloud processing to illustrate the challenging nature of the SemanticKitti dataset. 
+
+
 ## References <a name="references"></a>
 This project is based on the following sources:
 
