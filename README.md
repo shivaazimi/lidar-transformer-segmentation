@@ -32,8 +32,8 @@ To provide some context, The Point Transformer paper proposed a design for self-
 ## Folder structure <a name="folder_structure"></a>
 
 - Dataloading and preprocessed datasets are available in `data_loader` and `dataset`. 
-- The model is available in `models/st_gat.py`. 
-- Training functions are provided in `models/trainer.py`.
+- The model is available in `models/../pointtransformer_seg.py`. 
+- Training functions are provided in `tool/train.py`.
 ```
 ├── config
 │   └── semantickitti
@@ -84,14 +84,35 @@ The SemanticKitti dataset is a large-scale outdoor LiDAR point cloud dataset of 
 
 ## Results <a name="results"></a>
 
-- Semanctic Segmentation on SemanticKitti
+- Semanctic Segmentation on S3DIS Dataset
 
   |Model | mAcc | OA | mIoU |
   |-------| ------| ----| -------|
-  |Paper| 76.5 | 90.8 | 70.4 |
-  |Hengshuang's code | 76.8 | 90.4 | 70.0 |
+  |[Point Transformer paper](https://arxiv.org/pdf/2012.09164.pdf)  | 76.5 | 90.8 | 70.4 |
+  |[Hengshuang's code ](https://github.com/POSTECH-CVLab/point-transformer)| 76.8 | 90.4 | 70.0 |
+  |PointNet | 66.2 | 78.5 | 47.6 |
+  |SPGraph | 73.0 | 85.5 | 62.1 |
 
 
+
+
+- Semanctic Segmentation on SemanticKitti Dataset
+
+  |Model | mAcc | OA | mIoU |
+  |-------| ------| ----| -------|
+  |[POSTECH-CVLab Point Transformer ](https://github.com/POSTECH-CVLab/point-transformer)| 76.8 | 90.4 | 70.0 |
+  |PointNet | - | - | 14.6 |
+  |SPGraph | - | - | 17.4 |
+  |SPLATNet | - | - | 18.4 |
+  |PointNet++ | - | - |  20.1 |
+  |SqueezeSeg | - | - | 29.5 |
+  |SqueezeSegV2 | - | - |  39.7 |
+  |TangentConv | - | - | 40.9 |
+  |DarkNet21Seg | - | - | 47.4 |
+  |DarkNet53Seg | - | - | 49.9 |
+
+
+PointNet [25] – 49.0 41.1
 ## References <a name="references"></a>
 This project is based on the following sources:
 
