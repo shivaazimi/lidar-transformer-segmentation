@@ -35,24 +35,34 @@ To provide some context, The Point Transformer paper proposed a design for self-
 - The model is available in `models/st_gat.py`. 
 - Training functions are provided in `models/trainer.py`.
 ```
-├── data_loader
-│   ├── dataloader.py
+├── config
+│   └── semantickitti
+│       └── semantickitti_pointtransformer_repro.yaml
+├── data
+│   └── semantickitti
+│       └── semantickitti_names.txt
+├── lib
+│   └── semantickitti
+│       └── semantickitti_pointtransformer_repro.yaml
 │   └── __init__.py
-├── dataset
-│   ├── PeMSD7_V_228.csv
-│   └── PeMSD7_W_228.csv
-├── models
+├── model
+│   └── pointtransformer
+│       └── pointtransformer_seg.py
+│   └── __init__.py
+├── tool
+│   ├── test.py
+│   ├── test.sh
+│   ├── train.py
+|   └── train.sh
+├── util
 │   ├── __init__.py
-│   ├── st_gat.py
-│   └── trainer.py
-├── runs
-│   ├── model_final_200epochs.pt
-│   └── model_final_60epochs.pt
-├── utils
-│   ├── __init__.py
-|   └── math_utils.py
-├── main.py
-├── requirements.txt
+│   ├── common_util.py
+│   ├── config.py
+│   ├── data_util.py
+│   ├── semantickitti.py
+│   ├── transform.py
+|   └── voxelize.py
+├── env_setup.sh
 └── README.md
 ```
 
@@ -86,7 +96,9 @@ The SemanticKitti dataset is a large-scale outdoor LiDAR point cloud dataset of 
 This project is based on the following sources:
 
 * [POSTECH-CVLab Point Transformer codebase](https://github.com/POSTECH-CVLab/point-transformer) provided by Hengshuang Zhao
-* [Point Transformer paper](http://semantic-kitti.org/dataset.html)
+* [Point Transformer paper](https://arxiv.org/pdf/2012.09164.pdf)
 * [SemanticKitti dataset](http://semantic-kitti.org/dataset.html)
+* [SemanticKitti Paper](https://arxiv.org/pdf/1904.01416.pdf)
+
 
 
