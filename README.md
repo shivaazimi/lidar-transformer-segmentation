@@ -136,7 +136,7 @@ Semanctic Segmentation on SemanticKitti Dataset
 
   |Model | mAcc | OA | mIoU |
   |-------| ------| ----| -------|
-  |[POSTECH-CVLab Point Transformer ](https://github.com/POSTECH-CVLab/point-transformer)| 76.8 | 90.4 | 70.0 |
+  |[POSTECH-CVLab Point Transformer ](https://github.com/POSTECH-CVLab/point-transformer)| 56.85 | 73 | 61.77 |
   |PointNet | - | - | 14.6 |
   |SPGraph | - | - | 17.4 |
   |SPLATNet | - | - | 18.4 |
